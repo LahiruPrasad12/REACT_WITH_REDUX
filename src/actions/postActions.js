@@ -13,12 +13,12 @@ export const fetchPosts=()=> {
             {
                 userId:2,
                 name:'sadun',
-                title:'software engineer'
+                title:'network engineer'
             },
             {
                 userId:3,
                 name:'hashen',
-                title:'software engineer'
+                title:'cyber security engineer'
             },
             {
                 userId:4,
