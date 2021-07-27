@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 
 import React, { Component } from 'react'
 
+
+//meke view list eka class base kara ata
 class PostList extends Component {
 
     createList(){
