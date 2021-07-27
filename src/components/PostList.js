@@ -9,7 +9,7 @@ class PostList extends Component {
 
     createList(){
         return this.props.allPosts.map((post)=>{
-            return <li key={post.id}>{post.name}</li>
+            return <li key={post.id}>{post.title}{post.name}</li>
         })
     }
 

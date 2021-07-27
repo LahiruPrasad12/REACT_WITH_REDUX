@@ -7,7 +7,7 @@ function PostListFunction(props) {
 
     function createList(){
         return props.allPosts.map((post)=>{
-            return <li key={post.id}>{post.name}</li>
+            return <li key={post.id}>{post.name} <br></br>{post.title}</li>
         })
     }
 
