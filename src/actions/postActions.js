@@ -1,6 +1,35 @@
 import React from 'react'
 import {BUTTON_CLICK} from './types'
+import {SELECT_POST} from './types'
 import axios from 'axios'
+
+
+export const fetchPosts=()=>(dispatch)=>{
+        axios.get("http://localhost:5000/Travel_Agency/Retrieve").then((res)=>{
+            dispatch({
+                type : BUTTON_CLICK,
+                payload: res.data
+            })
+        })
+    
+}
+
+export const selectPost=(post)=>{
+    return{
+        type:SELECT_POST,
+        payload:post
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 // export const fetchPosts=()=> {
 //     return {
@@ -45,14 +74,3 @@ import axios from 'axios'
 //     }
        
 // }
-
-
-export const fetchPosts=()=>(dispatch)=>{
-        axios.get("http://localhost:5000/Travel_Agency/Retrieve").then((res)=>{
-            dispatch({
-                type : BUTTON_CLICK,
-                payload: res.data
-            })
-        })
-    
-}
