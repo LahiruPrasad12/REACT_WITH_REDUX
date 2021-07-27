@@ -36,7 +36,7 @@ export const fetchPosts=()=> {
                 title:'software engineer'
             },
             {
-                userId:1,
+                userId:7,
                 name:'lahiru',
                 title:'software engineer'
             }

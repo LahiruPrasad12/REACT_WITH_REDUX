@@ -1,10 +1,10 @@
-import Index from './components/index'
+import ButtonComponent from './components/ButtonComponent'
 
 function App() {
   return (
     <div className="App">
       <h1>Check Redux</h1>
-      {/* <Index/> */}
+      <ButtonComponent/>
     </div>
   );
 }
