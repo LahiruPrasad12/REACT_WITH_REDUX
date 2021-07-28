@@ -2,6 +2,8 @@ import ButtonComponent from './components/ButtonComponent'
 import PostList from './components/PostList';
 import PostListFunction from './components/PostListFunction';
 import SelectedPost from './components/selctedPost';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 function App() {
   return (

@@ -4,14 +4,14 @@ import {connect} from 'react-redux'
 function selctedPost(props) {
 
     if(!props.selctedPost){
-        return(<h3>Select a post..</h3>)
+        return(<h3></h3>)
     }
     return (
         <div>
-            <h2>Contract Id : {props.selctedPost.contract_id}</h2>
-            <h2>Name : {props.selctedPost.name}</h2>
-            <h2>Mail Address : {props.selctedPost.mail_Address}</h2>
-            <h2>Contact Number : {props.selctedPost.mobile}</h2>
+            <td>Contract Id : {props.selctedPost.contract_id}</td><br></br>
+            <td>Name : {props.selctedPost.name}</td><br></br>
+            <td>Mail Address : {props.selctedPost.mail_Address}</td><br></br>
+            <td>Contact Number : {props.selctedPost.mobile}</td><br></br>
         </div>
     )
 }
