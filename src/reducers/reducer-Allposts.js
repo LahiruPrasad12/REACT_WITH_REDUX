@@ -29,9 +29,11 @@ export default function (state=defaultState,action) {
       
       case FETCH_BOOK_SUCCESS:
           return{ ...state, posts:action.payload};
+          
 
       case FETCH_BOOK_LOADING:
           return{...state, isLoading: action.payload}
+          
 
        default:
           return state

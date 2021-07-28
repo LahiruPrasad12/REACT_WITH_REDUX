@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import {connect} from 'react-redux'
+import axios  from 'axios'
 
 function selctedPost(props) {
+
 
     if(!props.selctedPost){
         return(<h3></h3>)

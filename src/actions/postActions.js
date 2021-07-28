@@ -30,7 +30,7 @@ export const fetchPosts=()=>{
 
                 dispatch(fetchPostLoading(isLoading));
                 dispatch(fetchPostSuccess(res.data));
-                
+
             // const data = normalizeResponse(res.data)
         }).catch((err)=>{
             console.log(err);
@@ -62,7 +62,7 @@ export const fetchPostSuccess = (data)=>{
 
 
 
-//select one data
+//this function run when user clicked view button there has on form
 export const selectPost=(post)=>{
     return{
         type:SELECT_POST,

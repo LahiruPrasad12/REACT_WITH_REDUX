@@ -1,8 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 import {bindActionCreators} from 'redux';
 import {selectPost} from '../actions/postActions'
 import './all.css'
+
 
 //meken view list eka function base kara ata
 function PostListFunction(props) {
@@ -28,6 +30,7 @@ function PostListFunction(props) {
                                 <td>{post.mail_Address}</td>
                                 <td>{post.mobile}</td>
                                 <td><button className="btn btn-default" onClick={()=>props.selectPost(post)}>View</button><button className="btn btn-danger">Delete</button></td>
+                                {/* <td><Link to ="/viewOne/post">View</Link></td> */}
                             </tr>
                         })}
                     </tbody>
